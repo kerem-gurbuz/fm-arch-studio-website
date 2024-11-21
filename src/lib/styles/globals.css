@@ -80,6 +80,48 @@
     @apply border-border;
   }
   body {
-    @apply text-very-dark-blue bg-white;
+    @apply bg-white text-very-dark-blue;
+  }
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                 Typography                                 */
+/* -------------------------------------------------------------------------- */
+
+/* Headings */
+@layer components {
+  .heading-lg {
+    @apply font-league-spartan text-[48px] font-bold leading-[48px] tracking-[-1.2px];
+  }
+  .heading-md {
+    @apply font-league-spartan text-[48px] font-bold leading-[52px] tracking-[-1.71px];
+  }
+  .heading-sm {
+    @apply font-league-spartan text-[32px] font-bold leading-[40px];
+  }
+
+  @screen md {
+    .heading-xl {
+      @apply font-league-spartan text-[120px] font-bold leading-[200px] tracking-[-3px];
+    }
+    .heading-lg {
+      @apply text-[96px] leading-[80px] tracking-[-2px];
+    }
+    .heading-md {
+      @apply text-[72px] leading-[64px] tracking-[-2px];
+    }
+  }
+
+  @screen lg {
+    .heading-xl {
+      @apply text-[250px] leading-[200px] tracking-[-5px];
+    }
+  }
+}
+
+/* Body */
+@layer components {
+  .body-text {
+    @apply font-league-spartan text-[18px] font-medium leading-[24px];
   }
 }

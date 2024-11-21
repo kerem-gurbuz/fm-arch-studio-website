@@ -1,6 +1,7 @@
 import type { Config } from 'tailwindcss';
 
 import tailwindCssAnimate from 'tailwindcss-animate';
+import defaultTheme from 'tailwindcss/defaultTheme';
 
 export default {
   darkMode: ['class'],
@@ -18,6 +19,12 @@ export default {
     extend: {
       screens: {
         '2xl': '1440px',
+      },
+      fontFamily: {
+        'league-spartan': [
+          'var(--font-league-spartan)',
+          ...defaultTheme.fontFamily.sans,
+        ],
       },
       colors: {
         // design system colors
