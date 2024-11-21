@@ -2,6 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
+/* -------------------------------------------------------------------------- */
+/*                                   Colors                                   */
+/* -------------------------------------------------------------------------- */
+
+/* Design System Colors */
+@layer base {
+  :root {
+    --color-very-dark-blue: 225 13% 12%;
+    --color-dark-grey: 226 6% 40%;
+    --color-medium-grey: 223 7% 53%;
+    --color-light-grey: 225 17% 82%;
+    --color-very-light-grey: 230 21% 95%;
+    --color-red-error: 0 68% 61%;
+  }
+}
+
+/* Shadcn-UI Colors */
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -63,6 +80,6 @@
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply text-very-dark-blue bg-white;
   }
 }
