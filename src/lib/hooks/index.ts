@@ -1,1 +1,1 @@
-export { useBreakpoint, useWindowWidth } from './use-window-size';
+export { useBreakpoint } from './use-breakpoint';
