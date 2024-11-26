@@ -1,3 +1,4 @@
+import { Footer, Header } from '@/components/layout';
 import { league_spartan } from '@/lib/styles/fonts';
 import '@/lib/styles/globals.css';
 
@@ -13,7 +14,9 @@ export default function RootLayout({
       <body
         className={`${league_spartan.variable} font-league-spartan antialiased`}
       >
+        <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );

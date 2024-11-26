@@ -15,6 +15,11 @@ export default {
   theme: {
     container: {
       center: true,
+      padding: {
+        DEFAULT: '32px',
+        md: '97.5px',
+        '2xl': '165px',
+      },
     },
     extend: {
       screens: {
@@ -34,6 +39,9 @@ export default {
         'light-grey': 'hsl(var(--color-light-grey))',
         'very-light-grey': 'hsl(var(--color-very-light-grey))',
         'red-error': 'hsl(var(--color-red-error))',
+
+        // additional colors
+        'pale-sky': 'hsl(var(--color-pale-sky))',
 
         // shadcn-ui colors
         background: 'hsl(var(--background))',
