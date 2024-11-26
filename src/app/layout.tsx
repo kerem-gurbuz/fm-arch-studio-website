@@ -1,4 +1,4 @@
-import { Header } from '@/components/layout';
+import { Footer, Header } from '@/components/layout';
 import { league_spartan } from '@/lib/styles/fonts';
 import '@/lib/styles/globals.css';
 
@@ -16,6 +16,7 @@ export default function RootLayout({
       >
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );
