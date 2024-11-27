@@ -16,12 +16,12 @@ export function ResponsiveImage({
 }: ResponsiveImageProps) {
   return (
     <figure
-      {...rest}
       className={cn(
         'relative h-full w-full',
         imageSource.wrapperClassName,
         className,
       )}
+      {...rest}
     >
       <Image
         src={imageSource.src}
