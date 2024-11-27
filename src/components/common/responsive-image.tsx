@@ -26,7 +26,7 @@ export function ResponsiveImage({
       <Image
         src={imageSource.src}
         alt={imageSource.alt}
-        className={cn('object-cover', imageSource.className)}
+        className={imageSource.className}
         sizes={imageSource.sizes}
         quality={imageSource.quality}
         priority={imageSource.priority}
