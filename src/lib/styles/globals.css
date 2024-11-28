@@ -23,6 +23,13 @@
       - NavLinks component............................................: null
       - Portfolio button..............................................: null
 
+  <-------------------------------- Homepage -------------------------------->
+
+    # Hero Section....................................................: null
+      - HeroSlider (Carousel) component...............................: null
+        > Image overlay (relative to CarouselItem)....................: z-10
+        > Slide content (relative to CarouselItem)....................: z-20
+        > Thumbnails (relative to Carousel)...........................: z-30
  */
 
 /* -------------------------------------------------------------------------- */
