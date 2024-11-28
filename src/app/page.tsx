@@ -1,11 +1,9 @@
+import { HeroSection } from '@/components/home';
+
 export default function HomePage() {
   return (
     <main id="home-page">
-      <section id="hero-section">
-        <div className="container py-[100px]">
-          <h1 className="text-center text-3xl font-bold">Hero Section</h1>
-        </div>
-      </section>
+      <HeroSection />
       <section id="welcome-section">
         <div className="container py-[100px]">
           <h2 className="text-center text-3xl font-bold">Welcome Section</h2>
