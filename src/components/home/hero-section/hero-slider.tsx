@@ -1,6 +1,7 @@
 'use client';
 
 import type { EmblaOptionsType } from 'embla-carousel';
+import Autoplay, { type AutoplayOptionsType } from 'embla-carousel-autoplay';
 import Link from 'next/link';
 import { useCallback, useEffect, useState } from 'react';
 
@@ -16,8 +17,17 @@ import { ROUTES } from '@/config/navigation';
 import { cn } from '@/lib/utils';
 import type { HeroSlide } from './types';
 
-const OPTIONS: EmblaOptionsType = {
+const CAROUSEL_OPTIONS: EmblaOptionsType = {
+  loop: true,
   startIndex: 0,
+};
+
+const AUTOPLAY_OPTIONS: AutoplayOptionsType = {
+  playOnInit: true,
+  stopOnMouseEnter: true,
+  stopOnFocusIn: true,
+  stopOnInteraction: false,
+  delay: 5000,
 };
 
 type HeroSliderProps = {
@@ -52,7 +62,8 @@ export function HeroSlider({ slides, className }: HeroSliderProps) {
     <Carousel
       setApi={setApi}
       className={cn('relative h-full w-full', className)}
-      opts={OPTIONS}
+      opts={CAROUSEL_OPTIONS}
+      plugins={[Autoplay(AUTOPLAY_OPTIONS)]}
     >
       <CarouselContent>
         {slides.map((slide) => (
