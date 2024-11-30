@@ -1,14 +1,10 @@
-import { HeroSection } from '@/components/home';
+import { HeroSection, WelcomeSection } from '@/components/home';
 
 export default function HomePage() {
   return (
-    <main id="home-page">
+    <main id="homepage">
       <HeroSection />
-      <section id="welcome-section">
-        <div className="container py-[100px]">
-          <h2 className="text-center text-3xl font-bold">Welcome Section</h2>
-        </div>
-      </section>
+      <WelcomeSection />
       <section id="featured-projects">
         <div className="container py-[100px]">
           <h2 className="text-center text-3xl font-bold">Featured Projects</h2>
