@@ -9,16 +9,16 @@
 /* 
   <--------------------------------- Header --------------------------------->
   
-    # Header..........................................................: z-100
-      - PageLabel component (relative to Header)......................: null
+    # Header................................................[relative]: z-100
+      - PageLabel component (relative to Header)............[absolute]: null
       - ArchStudioLogo component......................................: null
       - NavLinks component............................................: null
-      - MobileMenu component (fixed)..................................: z-50
+      - MobileMenu component...................................[fixed]: z-50
 
   <--------------------------------- Footer --------------------------------->
 
     # Footer..........................................................: null
-      - Absolute-positioned decorative background elements (#EEEFF4)..: -z-10
+      - Decorative background elements (#EEEFF4)............[absolute]: -z-10
       - ArchStudioLogo component......................................: null
       - NavLinks component............................................: null
       - Portfolio button..............................................: null
@@ -26,10 +26,21 @@
   <-------------------------------- Homepage -------------------------------->
 
     # Hero Section....................................................: null
-      - HeroSlider (Carousel) component...............................: null
-        > Image overlay (relative to CarouselItem)....................: z-10
-        > Slide content (relative to CarouselItem)....................: z-20
-        > Thumbnails (relative to Carousel)...........................: z-30
+      - Carousel (as HeroSlider) component............................: null
+        > Slide image.................................................: null
+        > Image overlay (relative to CarouselItem)..........[absolute]: z-10
+        > Slide content (relative to CarouselItem)..........[absolute]: z-20
+        > Thumbnails (relative to Carousel).................[absolute]: z-30
+
+    # Welcome Section.................................................: null
+      - Welcome component.............................................: null
+        > Decorative "Welcome" text (#EEEFF4)...............[absolute]: z-10
+        > Content...........................................[relative]: z-20
+        > Image.......................................................: null
+      - SmallTeam component...........................................: null
+        > Background image............................................: null
+        > Image overlay (relative to SmallTeam component)...[absolute]: z-10
+        > Content (relative to SmallTeam component).........[absolute]: z-20
  */
 
 /* -------------------------------------------------------------------------- */
@@ -112,7 +123,7 @@
     @apply border-border;
   }
   body {
-    @apply bg-white text-very-dark-blue;
+    @apply bg-white font-league-spartan text-very-dark-blue antialiased;
   }
 }
 

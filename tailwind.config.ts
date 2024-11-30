@@ -26,6 +26,7 @@ export default {
         '2xl': '1440px',
       },
       fontFamily: {
+        spartan: ['var(--font-spartan)', ...defaultTheme.fontFamily.sans],
         'league-spartan': [
           'var(--font-league-spartan)',
           ...defaultTheme.fontFamily.sans,
