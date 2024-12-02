@@ -80,7 +80,7 @@ export function HeroSlider({ slides, className }: HeroSliderProps) {
               <div
                 className={cn(
                   'flex flex-col items-start justify-between text-white',
-                  'min-h-[334px] w-full max-w-[311px] md:min-h-[355px] md:max-w-[457px] lg:max-w-[544px]',
+                  'min-h-[334px] w-full max-w-[311px] sm:max-w-[445px] md:min-h-[355px] md:max-w-[457px] lg:max-w-[544px]',
                 )}
               >
                 <div className="space-y-[11px] md:space-y-[10px]">
