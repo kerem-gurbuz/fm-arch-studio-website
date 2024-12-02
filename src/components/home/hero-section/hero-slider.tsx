@@ -2,10 +2,9 @@
 
 import type { EmblaOptionsType } from 'embla-carousel';
 import Autoplay, { type AutoplayOptionsType } from 'embla-carousel-autoplay';
-import Link from 'next/link';
 import { useCallback, useEffect, useState } from 'react';
 
-import { ArrowIcon, DynamicImage } from '@/components/common';
+import { ArchButton, DynamicImage } from '@/components/common';
 import { Button } from '@/components/ui/button';
 import {
   Carousel,
@@ -92,21 +91,11 @@ export function HeroSlider({ slides, className }: HeroSliderProps) {
                     {slide.description}
                   </p>
                 </div>
-                <Button
-                  className={cn(
-                    'mt-[17px] h-[72px] w-[252px]',
-                    'pb-[22px] pl-[37px] pr-[32px] pt-[25px]',
-                    'inline-flex items-center justify-between bg-very-dark-blue transition-colors duration-300 hover:bg-dark-grey',
-                  )}
-                  asChild
-                >
-                  <Link href={ROUTES.PORTFOLIO.href}>
-                    <span className="text-[18px] font-bold leading-[25px]">
-                      See Our Portfolio
-                    </span>
-                    <ArrowIcon className="h-[18px] w-[24px] stroke-white" />
-                  </Link>
-                </Button>
+                <ArchButton
+                  text="See Our Portfolio"
+                  href={ROUTES.PORTFOLIO.href}
+                  className="mt-[17px] w-[252px] pl-[37px] pr-[32px]"
+                />
               </div>
             </div>
           </CarouselItem>

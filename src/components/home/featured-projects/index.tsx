@@ -1,9 +1,5 @@
-import Link from 'next/link';
-
-import { ArrowIcon } from '@/components/common';
-import { Button } from '@/components/ui/button';
+import { ArchButton } from '@/components/common';
 import { ROUTES } from '@/config/navigation';
-import { cn } from '@/lib/utils';
 import { SECTION_ID } from './constants';
 import { FeaturedProjectsGrid } from './featured-projects-grid';
 
@@ -20,21 +16,11 @@ export function FeaturedProjects() {
           <h2 id={`${SECTION_ID}-heading`} className="heading-md">
             Featured
           </h2>
-          <Button
-            className={cn(
-              'h-[72px] w-[169px] pb-[22px] pl-[37px] pr-[32px] pt-[25px]',
-              'hidden items-center justify-between bg-very-dark-blue transition-colors duration-300 hover:bg-dark-grey md:inline-flex',
-            )}
-            asChild
-          >
-            <Link href={ROUTES.PORTFOLIO.href}>
-              <span className="text-[18px] font-bold leading-[25px] text-white">
-                See All
-              </span>
-              <ArrowIcon className="h-[18px] w-[24px] stroke-white" />
-              <span className="sr-only">View All Projects</span>
-            </Link>
-          </Button>
+          <ArchButton
+            text="See All"
+            href={ROUTES.PORTFOLIO.href}
+            className="hidden w-[169px] pl-[35px] pr-[32px] md:inline-flex"
+          />
         </div>
         {/* Featured Project Thumbnails */}
         <FeaturedProjectsGrid />

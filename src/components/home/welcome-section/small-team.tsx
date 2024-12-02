@@ -1,7 +1,4 @@
-import Link from 'next/link';
-
-import { ArrowIcon, DynamicImage } from '@/components/common';
-import { Button } from '@/components/ui/button';
+import { ArchButton, DynamicImage } from '@/components/common';
 import { ROUTES } from '@/config/navigation';
 import { cn } from '@/lib/utils';
 import { SMALL_TEAM_IMAGE_CONFIG } from './constants';
@@ -32,20 +29,11 @@ export function SmallTeam({ className }: TeamProps) {
           <span className="heading-md inline-block">
             Small team, <br /> big ideas
           </span>
-          <Button
-            className={cn(
-              'h-[72px] w-[187px] pb-[22px] pl-[37px] pr-[32px] pt-[25px]',
-              'inline-flex items-center justify-between bg-very-dark-blue transition-colors duration-300 hover:bg-dark-grey',
-            )}
-            asChild
-          >
-            <Link href={ROUTES.ABOUT.href}>
-              <span className="text-[18px] font-bold leading-[25px]">
-                About Us
-              </span>
-              <ArrowIcon className="h-[18px] w-[24px] stroke-white" />
-            </Link>
-          </Button>
+          <ArchButton
+            text="About Us"
+            href={ROUTES.ABOUT.href}
+            className="w-[187px] pl-[35px] pr-[32px]"
+          />
         </div>
       </div>
     </div>

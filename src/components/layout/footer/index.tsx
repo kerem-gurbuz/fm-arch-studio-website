@@ -1,7 +1,6 @@
 import Link from 'next/link';
 
-import { ArchStudioLogo, ArrowIcon } from '@/components/common';
-import { Button } from '@/components/ui/button';
+import { ArchButton, ArchStudioLogo } from '@/components/common';
 import { ROUTES } from '@/config/navigation';
 import { cn } from '@/lib/utils';
 import { NavLinks } from './nav-links';
@@ -27,20 +26,11 @@ export function Footer() {
             <NavLinks />
           </div>
           {/* Portfolio Button */}
-          <Button
-            className={cn(
-              'h-[72px] w-[252px] pb-[22px] pl-[37px] pr-[32px] pt-[25px]',
-              'inline-flex items-center justify-between bg-very-dark-blue transition-colors duration-300 hover:bg-dark-grey',
-            )}
-            asChild
-          >
-            <Link href={ROUTES.PORTFOLIO.href}>
-              <span className="text-[18px] font-bold leading-[25px] text-white">
-                See Our Portfolio
-              </span>
-              <ArrowIcon className="h-[18px] w-[24px] stroke-white" />
-            </Link>
-          </Button>
+          <ArchButton
+            text="See Our Portfolio"
+            href={ROUTES.PORTFOLIO.href}
+            className="w-[252px] pl-[37px] pr-[32px]"
+          />
           {/* Background-Color Element (Desktop) */}
           <div className="absolute inset-y-0 left-0 right-[156px] -z-10 hidden bg-pale-sky md:block lg:right-[126px]" />
         </div>
