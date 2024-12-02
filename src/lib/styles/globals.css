@@ -41,6 +41,14 @@
         > Background image............................................: null
         > Image overlay (relative to SmallTeam component)...[absolute]: z-10
         > Content (relative to SmallTeam component).........[absolute]: z-20
+        
+    # Featured Projects...............................................: null
+      - FeaturedProjectsGrid component................................: null
+      - ProjectCard component.........................................: null
+        > Card image..................................................: null
+        > Image overlay (relative to ProjectCard)...........[absolute]: z-10
+        > Project number (relative to ProjectCard)..........[absolute]: z-20
+        > Content (relative to ProjectCard).................[absolute]: z-20
  */
 
 /* -------------------------------------------------------------------------- */
