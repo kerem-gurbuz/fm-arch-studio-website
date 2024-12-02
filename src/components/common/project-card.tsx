@@ -1,6 +1,6 @@
-import { DynamicImage } from './dynamic-image';
 import type { Project } from '@/lib/types';
 import { cn, transformIsoToDate } from '@/lib/utils';
+import { DynamicImage } from './dynamic-image';
 
 type ProjectCardProps = {
   className?: string;
@@ -37,11 +37,11 @@ export function ProjectCard({ className, index, project }: ProjectCardProps) {
         >
           {project.title}
         </h3>
-        <span className="inline-block text-[18px] font-medium leading-[24px] opacity-75">
+        <p className="text-[18px] font-medium leading-[24px] opacity-75">
           {project.isFeatured
             ? 'View All Projects'
             : transformIsoToDate(project.date)}
-        </span>
+        </p>
       </div>
     </div>
   );
