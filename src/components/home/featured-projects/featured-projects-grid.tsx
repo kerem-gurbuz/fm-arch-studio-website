@@ -2,11 +2,20 @@ import Link from 'next/link';
 
 import { ArchButton, InfoMessage, ProjectCard } from '@/components/common';
 import { ROUTES } from '@/config/navigation';
-import { getFeaturedProjects } from '@/lib/utils/project';
+import type { Project } from '@/lib/types';
+import { cn } from '@/lib/utils';
 
-export function FeaturedProjectsGrid() {
-  const featuredProjects = getFeaturedProjects();
-  if (featuredProjects.length === 0) {
+type FeaturedProjectsGridProps = {
+  className?: string;
+  projects: Project[];
+};
+
+export function FeaturedProjectsGrid({
+  className,
+  projects,
+}: FeaturedProjectsGridProps) {
+  // Render no projects message if array is empty
+  if (projects.length === 0) {
     return (
       <InfoMessage
         type="info"
@@ -17,20 +26,22 @@ export function FeaturedProjectsGrid() {
   }
 
   return (
-    <div
+    <ul
       aria-label="Featured Projects Grid"
-      className="grid gap-6 lg:grid-cols-3 lg:gap-[30px]"
+      className={cn('grid gap-6 lg:grid-cols-3 lg:gap-[30px]', className)}
     >
-      {featuredProjects.map((project, index) => (
-        <Link key={project.id} href="/portfolio">
-          <ProjectCard index={index} project={project} />
-        </Link>
+      {projects.map((project, index) => (
+        <li key={project.id}>
+          <Link href="/portfolio">
+            <ProjectCard variant="featured" index={index} project={project} />
+          </Link>
+        </li>
       ))}
       <ArchButton
         text="See All"
         href={ROUTES.PORTFOLIO.href}
         className="inline-flex justify-center gap-6 pl-[106px] pr-[103px] md:hidden"
       />
-    </div>
+    </ul>
   );
 }
