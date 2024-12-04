@@ -1,9 +1,12 @@
 import { ArchButton } from '@/components/common';
 import { ROUTES } from '@/config/navigation';
+import { getFeaturedProjects } from '@/lib/utils/project';
 import { SECTION_ID } from './constants';
 import { FeaturedProjectsGrid } from './featured-projects-grid';
 
 export function FeaturedProjects() {
+  const featuredProjects = getFeaturedProjects();
+
   return (
     <section
       id={SECTION_ID}
@@ -23,7 +26,7 @@ export function FeaturedProjects() {
           />
         </div>
         {/* Featured Project Thumbnails */}
-        <FeaturedProjectsGrid />
+        <FeaturedProjectsGrid projects={featuredProjects} />
       </div>
     </section>
   );
