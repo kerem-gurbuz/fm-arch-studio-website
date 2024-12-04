@@ -9,6 +9,8 @@ import { PROJECT_PARAMOUR } from './project-paramour';
 import { SERAPH_STATION } from './seraph-station';
 import { TRINITY_BANK_TOWER } from './trinity-bank-tower';
 
+export const SECTION_ID = 'hero-section';
+
 export const HERO_SLIDES: HeroSlide[] = [
   PROJECT_PARAMOUR,
   SERAPH_STATION,
