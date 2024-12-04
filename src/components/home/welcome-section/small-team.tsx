@@ -17,7 +17,7 @@ export function SmallTeam({ className }: TeamProps) {
           placeholder="blur"
         />
         {/* Image Overlay */}
-        <div className="absolute inset-0 z-10 bg-black opacity-50" />
+        <div className="pointer-events-none absolute inset-0 z-10 bg-black opacity-50" />
         {/* Content */}
         <div
           className={cn(
@@ -26,9 +26,9 @@ export function SmallTeam({ className }: TeamProps) {
             'min-h-[199px] w-full max-w-[311px] md:min-h-[225px] md:max-w-[445px]',
           )}
         >
-          <span className="heading-md inline-block">
+          <h2 className="heading-md">
             Small team, <br /> big ideas
-          </span>
+          </h2>
           <ArchButton
             text="About Us"
             href={ROUTES.ABOUT.href}
