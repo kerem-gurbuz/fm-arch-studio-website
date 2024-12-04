@@ -74,7 +74,7 @@ export function HeroSlider({ slides, className }: HeroSliderProps) {
             {/* Multi-Source Slide Image */}
             <DynamicImage imageConfig={slide.imageConfig} placeholder="blur" />
             {/* Image Overlay */}
-            <div className="absolute inset-y-0 left-4 right-0 z-10 bg-black/35" />
+            <div className="pointer-events-none absolute inset-y-0 left-4 right-0 z-10 bg-black/50" />
             {/* Slide Content */}
             <div className="absolute left-[calc(32px+16px)] top-[116px] z-20 sm:left-[calc(50%+16px-(640px-2*32px)/2)] md:left-[calc(58px+16px)] md:top-[186px] xl:left-[calc(190px+16px)]">
               <div
@@ -86,6 +86,7 @@ export function HeroSlider({ slides, className }: HeroSliderProps) {
                 <div className="space-y-[11px] md:space-y-[10px]">
                   <div id={slide.id + '-title'} className="heading-lg">
                     {slide.title}
+                    <span className="sr-only">{slide.title}</span>
                   </div>
                   <p className="body-text w-full lg:max-w-[445px]">
                     {slide.description}
