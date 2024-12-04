@@ -77,7 +77,7 @@ export function ProjectCard(props: ProjectCardProps) {
         </span>
       )}
       {/* Content */}
-      <div className="absolute bottom-[23px] left-[24px] z-20 md:bottom-[39px] md:left-[40px]">
+      <div className="absolute inset-x-[24px] bottom-[23px] z-20 md:bottom-[39px] md:left-[40px]">
         <h3
           id={`${project.id}-heading`}
           className="text-[32px] font-bold leading-[40px]"
