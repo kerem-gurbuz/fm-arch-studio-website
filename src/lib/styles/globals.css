@@ -69,7 +69,12 @@
       - TeamIntro component (relative to HeroSection).......[absolute]: z-20
         > Decorative divider line (relative to TeamIntro)...[absolute]: null 
         > Content.....................................................: null
-      
+    
+    # Heritage Section
+      - Heritage component............................................: null
+        > Decorative divider line.....................................: null
+        > Content.....................................................: null
+        > Image.......................................................: null
  */
 
 /* -------------------------------------------------------------------------- */
