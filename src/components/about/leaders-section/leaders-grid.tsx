@@ -1,3 +1,4 @@
+import { InfoMessage } from '@/components/common';
 import { cn } from '@/lib/utils';
 import { LeaderCard } from './leader-card';
 import type { Leader } from './types';
@@ -17,6 +18,16 @@ type LeadersGridProps = {
 };
 
 export function LeadersGrid({ leaders }: LeadersGridProps) {
+  if (leaders.length === 0) {
+    return (
+      <InfoMessage
+        type="info"
+        title="No Leaders"
+        message="There are currently no leaders to display."
+      />
+    );
+  }
+
   return (
     <div
       aria-label="Leaders Grid"
