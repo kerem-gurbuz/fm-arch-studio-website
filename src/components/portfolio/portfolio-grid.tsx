@@ -30,7 +30,6 @@ export function PortfolioGrid({ className, projects }: PortfolioGridProps) {
       }));
   }, [projects]);
 
-  // Render no projects message if array is empty
   if (projects.length === 0) {
     return (
       <InfoMessage
@@ -45,7 +44,7 @@ export function PortfolioGrid({ className, projects }: PortfolioGridProps) {
     <ul
       aria-label="Portfolio Grid"
       className={cn(
-        'grid gap-6 lg:grid-cols-3 lg:gap-x-[30px] lg:gap-y-8',
+        'grid grid-cols-[311px] justify-center gap-6 sm:grid-cols-[280px_280px] sm:gap-x-4 md:grid-cols-1 lg:grid-cols-3 lg:gap-x-[30px] lg:gap-y-8',
         className,
       )}
     >
