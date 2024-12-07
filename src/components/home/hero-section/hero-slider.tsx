@@ -76,11 +76,11 @@ export function HeroSlider({ slides, className }: HeroSliderProps) {
             {/* Image Overlay */}
             <div className="pointer-events-none absolute inset-y-0 left-4 right-0 z-10 bg-black/50" />
             {/* Slide Content */}
-            <div className="absolute left-[calc(32px+16px)] top-[116px] z-20 sm:left-[calc(50%+16px-(640px-2*32px)/2)] md:left-[calc(58px+16px)] md:top-[186px] xl:left-[calc(190px+16px)]">
+            <div className="absolute left-[calc(32px+16px)] right-[32px] top-[116px] z-20 sm:left-[calc(50%+8px-(640px-2*32px)/2)] sm:right-[calc(50%-8px-(640px-2*32px)/2)] md:left-[calc(58px+16px)] md:right-auto md:top-[186px] xl:left-[calc(190px+16px)]">
               <div
                 className={cn(
                   'flex flex-col items-start justify-between text-white',
-                  'min-h-[334px] w-full max-w-[311px] sm:max-w-[445px] md:min-h-[355px] md:max-w-[457px] lg:max-w-[544px]',
+                  'min-h-[334px] w-full max-w-[445px] md:min-h-[355px] md:max-w-[457px] lg:max-w-[544px]',
                 )}
               >
                 <div className="space-y-[11px] md:space-y-[10px]">
