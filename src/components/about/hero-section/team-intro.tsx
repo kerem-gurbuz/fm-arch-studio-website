@@ -23,7 +23,7 @@ export function TeamIntro() {
         id={`${SECTION_ID}-heading`}
         className="heading-md mb-[21px] tracking-[-1.2px] md:mb-[38px] md:min-h-[133px] md:tracking-[-2px] lg:mb-[49px] lg:min-h-[138px]"
       >
-        Your team of <br className="hidden md:inline-block" /> professionals
+        Your team of <br /> professionals
       </h1>
       <p className="body-text text-dark-grey">
         Our small team of world-class professionals will work with you every
