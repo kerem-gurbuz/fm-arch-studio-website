@@ -21,7 +21,7 @@ export function TeamIntro() {
       {/*  Title & Description  */}
       <h1
         id={`${SECTION_ID}-heading`}
-        className="heading-md mb-[21px] tracking-[-1.2px] md:mb-[38px] md:min-h-[133px] md:tracking-[-2px] lg:mb-[49px] lg:min-h-[138px]"
+        className="heading-md mb-[21px] tracking-[-1.2px] md:mb-[43px] md:tracking-[-2px] lg:mb-[59px]"
       >
         Your team of <br /> professionals
       </h1>
