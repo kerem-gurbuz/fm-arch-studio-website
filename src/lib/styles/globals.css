@@ -17,38 +17,72 @@
 
   <--------------------------------- Footer --------------------------------->
 
-    # Footer..........................................................: null
-      - Decorative background elements (#EEEFF4)............[absolute]: -z-10
+    # Footer
+      - Decorative background elements (relative to Footer) [absolute]: -z-10
       - ArchStudioLogo component......................................: null
       - NavLinks component............................................: null
       - Portfolio button..............................................: null
 
   <-------------------------------- Homepage -------------------------------->
 
-    # Hero Section....................................................: null
+    # Hero Section
       - Carousel (as HeroSlider) component............................: null
         > Slide image.................................................: null
         > Image overlay (relative to CarouselItem)..........[absolute]: z-10
         > Slide content (relative to CarouselItem)..........[absolute]: z-20
         > Thumbnails (relative to Carousel).................[absolute]: z-30
 
-    # Welcome Section.................................................: null
+    # Welcome Section
       - Welcome component.............................................: null
-        > Decorative "Welcome" text (#EEEFF4)...............[absolute]: z-10
+        > Decorative "Welcome" text (relative to Welcome)...[absolute]: z-10
         > Content...........................................[relative]: z-20
         > Image.......................................................: null
       - SmallTeam component...........................................: null
         > Background image............................................: null
-        > Image overlay (relative to SmallTeam component)...[absolute]: z-10
-        > Content (relative to SmallTeam component).........[absolute]: z-20
+        > Image overlay (relative to SmallTeam).............[absolute]: z-10
+        > Content (relative to SmallTeam)...................[absolute]: z-20
         
-    # Featured Projects...............................................: null
+    # Featured Projects
       - FeaturedProjectsGrid component................................: null
       - ProjectCard component.........................................: null
         > Card image..................................................: null
         > Image overlay (relative to ProjectCard)...........[absolute]: z-10
         > Project number (relative to ProjectCard)..........[absolute]: z-20
         > Content (relative to ProjectCard).................[absolute]: z-20
+
+  <----------------------------- Portfolio Page ----------------------------->
+
+    # Portfolio Section
+      - PortfolioGrid component.......................................: null
+      - ProjectCard component.........................................: null
+        > Card image..................................................: null
+        > Image overlay (relative to ProjectCard)...........[absolute]: z-10
+        > Content (relative to ProjectCard).................[absolute]: z-20
+    
+  <------------------------------- About Page ------------------------------->
+
+    # Hero Section
+      - Image.........................................................: null
+      - Image overlay (relative to HeroSection).............[absolute]: z-10
+      - Decorative element (relative to HeroSection)........[absolute]: z-20
+      - Decorative "About" text (relative to HeroSection)...[absolute]: z-30
+      - TeamIntro component (relative to HeroSection).......[absolute]: z-20
+        > Decorative divider line (relative to TeamIntro)...[absolute]: null 
+        > Content.....................................................: null
+    
+    # Heritage Section
+      - Heritage component............................................: null
+        > Decorative divider line.....................................: null
+        > Content.....................................................: null
+        > Image.......................................................: null
+
+    # Leaders Section
+      - LeadersGrid component.........................................: null
+      - LeaderCard component..........................................: null
+        > Card image..................................................: null
+        > Image overlay (relative to LeaderCard)............[absolute]: z-10
+        > Social links (relative to LeaderCard).............[absolute]: z-20
+        > Content.....................................................: null
  */
 
 /* -------------------------------------------------------------------------- */
