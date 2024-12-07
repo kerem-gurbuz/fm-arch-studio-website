@@ -14,7 +14,6 @@ export function FeaturedProjectsGrid({
   className,
   projects,
 }: FeaturedProjectsGridProps) {
-  // Render no projects message if array is empty
   if (projects.length === 0) {
     return (
       <InfoMessage

@@ -14,15 +14,12 @@ import federalIITowerMobile from '/public/assets/images/portfolio/mobile/image-f
 import federalIITowerTablet from '/public/assets/images/portfolio/tablet/image-federal.jpg';
 
 import projectDelSolDesktop from '/public/assets/images/portfolio/desktop/image-del-sol.jpg';
-import projectDelSolMobile from '/public/assets/images/portfolio/mobile/image-del-sol.jpg';
 import projectDelSolTablet from '/public/assets/images/portfolio/tablet/image-del-sol.jpg';
 
 import lePrototypeDesktop from '/public/assets/images/portfolio/desktop/image-prototype.jpg';
-import lePrototypeMobile from '/public/assets/images/portfolio/mobile/image-prototype.jpg';
 import lePrototypeTablet from '/public/assets/images/portfolio/tablet/image-prototype.jpg';
 
 import tower228bDesktop from '/public/assets/images/portfolio/desktop/image-228b.jpg';
-import tower228bMobile from '/public/assets/images/portfolio/mobile/image-228b.jpg';
 import tower228bTablet from '/public/assets/images/portfolio/tablet/image-228b.jpg';
 
 import grandEdelweissHotelDesktop from '/public/assets/images/portfolio/desktop/image-edelweiss.jpg';
@@ -66,17 +63,17 @@ export const PROJECT_IMAGES: ProjectImageMap = {
     desktop: federalIITowerDesktop,
   },
   [ProjectId.PROJECT_DEL_SOL]: {
-    mobile: projectDelSolMobile,
+    mobile: projectDelSolTablet, // ! Changed to tablet image source for higher resolution on mobile devices. (Featured Project)
     tablet: projectDelSolTablet,
     desktop: projectDelSolDesktop,
   },
   [ProjectId.LE_PROTOTYPE]: {
-    mobile: lePrototypeMobile,
+    mobile: lePrototypeTablet, // ! Changed to tablet image source for higher resolution on mobile devices. (Featured Project)
     tablet: lePrototypeTablet,
     desktop: lePrototypeDesktop,
   },
   [ProjectId.TOWER_228B]: {
-    mobile: tower228bMobile,
+    mobile: tower228bTablet, // ! Changed to tablet image source for higher resolution on mobile devices. (Featured Project)
     tablet: tower228bTablet,
     desktop: tower228bDesktop,
   },
