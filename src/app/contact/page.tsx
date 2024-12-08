@@ -1,11 +1,9 @@
+import { HeroSection } from '@/components/contact';
+
 export default function ContactPage() {
   return (
     <main id="contact-page">
-      <section id="hero-section" className="py-[200px]">
-        <div className="container">
-          <h1 className="heading-md">Hero Section</h1>
-        </div>
-      </section>
+      <HeroSection />
       <section id="contact-details" className="py-[200px]">
         <div className="container">
           <h2 className="heading-md">Contact Details</h2>
