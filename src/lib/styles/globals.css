@@ -83,6 +83,17 @@
         > Image overlay (relative to LeaderCard)............[absolute]: z-10
         > Social links (relative to LeaderCard).............[absolute]: z-20
         > Content.....................................................: null
+
+  <------------------------------ Contact Page ------------------------------>
+
+    # Hero Section
+      - Image.........................................................: null
+      - Image overlay (relative to HeroSection).............[absolute]: z-10
+      - Decorative element (relative to HeroSection)........[absolute]: z-20
+      - Decorative "Contact" text (relative to HeroSection).[absolute]: z-30
+      - ContactUs component (relative to HeroSection).......[absolute]: z-20
+        > Decorative divider line (relative to ContactUs)...[absolute]: null 
+        > Content.....................................................: null
  */
 
 /* -------------------------------------------------------------------------- */
