@@ -19,7 +19,9 @@ export const env = createEnv({
     - Specify your client-side environment variables schema here. This way you can ensure the app isn't built with invalid env vars.
     ! You'll get type errors if these are not prefixed with NEXT_PUBLIC_.
    */
-  client: {},
+  client: {
+    NEXT_PUBLIC_GOOGLE_MAPS_API_KEY: z.string().min(1),
+  },
   /* 
     shared variables
     ----------------------------------------------------------------------
@@ -37,6 +39,8 @@ export const env = createEnv({
   runtimeEnv: {
     SITE_URL: process.env.SITE_URL,
     NODE_ENV: process.env.NODE_ENV,
+    NEXT_PUBLIC_GOOGLE_MAPS_API_KEY:
+      process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY,
   },
   emptyStringAsUndefined: true,
 });
