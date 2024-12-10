@@ -94,6 +94,15 @@
       - ContactUs component (relative to HeroSection).......[absolute]: z-20
         > Decorative divider line (relative to ContactUs)...[absolute]: null 
         > Content.....................................................: null
+
+    # Contact Details Section
+      - Content.......................................................: null
+        > Decorative divider line.....................................: null
+        > Title & OfficeCards.........................................: null
+      - GoogleMap component...........................................: null
+        > MapControl (relative to GoogleMap)................[absolute]: default
+        > MarkerWithInfoWindow (relative to GoogleMap)......[absolute]: default
+        
  */
 
 /* -------------------------------------------------------------------------- */
