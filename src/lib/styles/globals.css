@@ -102,7 +102,14 @@
       - GoogleMap component...........................................: null
         > MapControl (relative to GoogleMap)................[absolute]: default
         > MarkerWithInfoWindow (relative to GoogleMap)......[absolute]: default
-        
+
+    # Contact Form Section
+      - Title.........................................................: null
+      - FormItem component............................................: null
+        > Input & Textarea............................................: null
+        > Bottom-border (relative to FormItem)..............[absolute]: null
+        > FormMessage (relative to FormItem)................[absolute]: null
+      - SubmitButton component........................................: null
  */
 
 /* -------------------------------------------------------------------------- */
