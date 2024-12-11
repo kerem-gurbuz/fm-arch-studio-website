@@ -1,10 +1,21 @@
 'use server';
 
 import DOMPurify from 'isomorphic-dompurify';
+import { fromZodError } from 'zod-validation-error';
 
-import { contactFormSchema } from './schemas';
+import { contactFormSchema, type ContactFormValues } from './schemas';
 
-export async function submitContactForm(values: FormData) {
+type ReturnType =
+  | {
+      success: true;
+      data: ContactFormValues;
+    }
+  | {
+      success: false;
+      error: string;
+    };
+
+export async function submitContactForm(values: FormData): Promise<ReturnType> {
   try {
     // Step 1: Validation
     const validatedFields = contactFormSchema.safeParse({
@@ -14,8 +25,10 @@ export async function submitContactForm(values: FormData) {
     });
 
     if (!validatedFields.success) {
+      const readableError = fromZodError(validatedFields.error);
       return {
-        error: 'Invalid fields. Please check your input.',
+        success: false,
+        error: readableError.message,
       };
     }
 
@@ -37,6 +50,7 @@ export async function submitContactForm(values: FormData) {
   } catch (error) {
     console.error('Error in submitContactForm:', error);
     return {
+      success: false,
       error: 'An unexpected error occurred. Please try again later.',
     };
   }

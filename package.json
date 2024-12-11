@@ -13,6 +13,7 @@
     "@radix-ui/react-dialog": "^1.1.2",
     "@radix-ui/react-label": "^2.1.0",
     "@radix-ui/react-slot": "^1.1.0",
+    "@radix-ui/react-toast": "^1.2.2",
     "@t3-oss/env-nextjs": "^0.11.1",
     "@vis.gl/react-google-maps": "^1.4.2",
     "class-variance-authority": "^0.7.0",
@@ -27,7 +28,8 @@
     "react-hook-form": "^7.54.0",
     "tailwind-merge": "^2.5.4",
     "tailwindcss-animate": "^1.0.7",
-    "zod": "^3.24.0"
+    "zod": "^3.24.0",
+    "zod-validation-error": "^3.4.0"
   },
   "devDependencies": {
     "@types/node": "^20",
