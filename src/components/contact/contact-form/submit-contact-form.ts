@@ -3,7 +3,10 @@
 import DOMPurify from 'isomorphic-dompurify';
 import { fromZodError } from 'zod-validation-error';
 
-import { contactFormSchema, type ContactFormValues } from './schemas';
+import {
+  contactFormSchema,
+  type ContactFormValues,
+} from './contact-form-schema';
 
 type ReturnType =
   | {
@@ -40,6 +43,24 @@ export async function submitContactForm(values: FormData): Promise<ReturnType> {
     };
 
     // Step 3: Server-side processing
+    // ... implementation to submit the form data ...
+    /* 
+    const response = await fetch('/api/contact', {
+      method: 'POST',
+      body: sanitizedData,
+    });
+
+    if (!response.ok) {
+      const errorData = await response.json();
+      return {
+        success: false,
+        error: errorData.message || 'An error occurred',
+      };
+    }
+
+    const data = await response.json();
+    return { success: true, data }; */
+
     // Simulate a delay...
     await new Promise((resolve) => setTimeout(resolve, 1000));
 

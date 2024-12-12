@@ -13,14 +13,19 @@ import {
 } from '@/components/ui/form';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
+import { useToast } from '@/lib/hooks';
 import { cn } from '@/lib/utils';
-import { submitContactForm } from './actions';
 import { SECTION_ID } from './constants';
-import { contactFormSchema, type ContactFormValues } from './schemas';
+import {
+  contactFormSchema,
+  type ContactFormValues,
+} from './contact-form-schema';
 import { SubmitButton } from './submit-button';
+import { submitContactForm } from './submit-contact-form';
 
 export function ContactForm() {
   const [isPending, startTransition] = useTransition();
+  const { toast } = useToast();
 
   const form = useForm<ContactFormValues>({
     resolver: zodResolver(contactFormSchema),
@@ -40,14 +45,20 @@ export function ContactForm() {
 
       const result = await submitContactForm(formData);
 
-      if (result.error) {
-        console.error('Error:', result.error);
-        // TODO: Add toast notification
+      if (!result.success) {
+        toast({
+          title: 'Error',
+          description: result.error,
+          variant: 'destructive',
+        });
         return;
       }
 
-      console.log('Success:', result.success);
-      // TODO: Add toast notification
+      toast({
+        title: 'Message Sent',
+        description: `Thank you, ${result.data.name}! Your message has been received. We'll get back to you at "${result.data.email}" as soon as possible.`,
+        variant: 'arch-dark',
+      });
 
       form.reset();
     });
