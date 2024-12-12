@@ -30,9 +30,9 @@ export const generateImageConfig = ({
   desktop: {
     src: sources.desktop,
     alt,
-    wrapperClassName: 'hidden h-[560px] lg:block',
+    wrapperClassName: 'hidden h-[560px] max-w-[350px] lg:block',
     className: 'object-cover object-center',
-    sizes: '(min-width: 1024px) 33vw', // ! 33vw = 1/3 of the viewport
+    sizes: '350px',
     quality: 100,
   },
 });

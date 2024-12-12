@@ -64,7 +64,7 @@ export function ProjectCard(props: ProjectCardProps) {
     >
       {/* Multi-Source Image */}
       <DynamicImage
-        imageConfig={project.imageConfig}
+        imageConfig={project.projectCover}
         className="transition-transform duration-500 group-hover:scale-110"
         placeholder="blur"
       />
@@ -87,7 +87,7 @@ export function ProjectCard(props: ProjectCardProps) {
         <p className="text-[18px] font-medium leading-[24px] opacity-75">
           {variant === 'featured'
             ? 'View All Projects'
-            : transformIsoToDate(project.date)}
+            : transformIsoToDate(project.details.completionDate)}
         </p>
       </div>
     </div>

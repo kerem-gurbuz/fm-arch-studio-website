@@ -9,21 +9,25 @@ import { cn } from '@/lib/utils';
 import { NUMBER_OF_PROJECTS } from './constants';
 
 type PortfolioGridProps = {
-  className?: string;
   projects: Project[];
+  className?: string;
 };
 
 export function PortfolioGrid({ className, projects }: PortfolioGridProps) {
   // Memoize sorted projects to prevent unnecessary re-renders
   const sortedProjects = useMemo(() => {
     return projects
-      .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
+      .sort(
+        (a, b) =>
+          new Date(b.details.completionDate).getTime() -
+          new Date(a.details.completionDate).getTime(),
+      )
       .map((project, index) => ({
         ...project,
-        imageConfig: {
-          ...project.imageConfig,
+        projectCover: {
+          ...project.projectCover,
           desktop: {
-            ...project.imageConfig.desktop,
+            ...project.projectCover.desktop,
             priority: index < NUMBER_OF_PROJECTS,
           },
         },
