@@ -83,6 +83,33 @@
         > Image overlay (relative to LeaderCard)............[absolute]: z-10
         > Social links (relative to LeaderCard).............[absolute]: z-20
         > Content.....................................................: null
+
+  <------------------------------ Contact Page ------------------------------>
+
+    # Hero Section
+      - Image.........................................................: null
+      - Image overlay (relative to HeroSection).............[absolute]: z-10
+      - Decorative element (relative to HeroSection)........[absolute]: z-20
+      - Decorative "Contact" text (relative to HeroSection).[absolute]: z-30
+      - ContactUs component (relative to HeroSection).......[absolute]: z-20
+        > Decorative divider line (relative to ContactUs)...[absolute]: null 
+        > Content.....................................................: null
+
+    # Contact Details Section
+      - Content.......................................................: null
+        > Decorative divider line.....................................: null
+        > Title & OfficeCards.........................................: null
+      - GoogleMap component...........................................: null
+        > MapControl (relative to GoogleMap)................[absolute]: default
+        > MarkerWithInfoWindow (relative to GoogleMap)......[absolute]: default
+
+    # Contact Form Section
+      - Title.........................................................: null
+      - FormItem component............................................: null
+        > Input & Textarea............................................: null
+        > Bottom-border (relative to FormItem)..............[absolute]: null
+        > FormMessage (relative to FormItem)................[absolute]: null
+      - SubmitButton component........................................: null
  */
 
 /* -------------------------------------------------------------------------- */

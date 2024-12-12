@@ -1,4 +1,5 @@
 import { Footer, Header } from '@/components/layout';
+import { Toaster } from '@/components/ui/toaster';
 import { league_spartan, spartan } from '@/lib/styles/fonts';
 import '@/lib/styles/globals.css';
 
@@ -15,6 +16,7 @@ export default function RootLayout({
         <Header />
         {children}
         <Footer />
+        <Toaster />
       </body>
     </html>
   );
