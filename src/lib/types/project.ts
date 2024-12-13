@@ -6,10 +6,16 @@ import type { ImageSourceMap, ImageSourceType } from '@/lib/types';
 type Project = {
   id: string;
   title: string;
-  description?: string;
-  imageConfig: ImageSourceMap;
-  date: string;
-  slug: string;
+  description: string;
+  details: {
+    client: string;
+    location: string;
+    architect: string;
+    completionDate: string;
+    website: string;
+  };
+  projectCover: ImageSourceMap;
+  gallery: string[];
   isFeatured: boolean;
 };
 

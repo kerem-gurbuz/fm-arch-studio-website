@@ -110,6 +110,16 @@
         > Bottom-border (relative to FormItem)..............[absolute]: null
         > FormMessage (relative to FormItem)................[absolute]: null
       - SubmitButton component........................................: null
+
+  <-------------------------- Special UI Components ------------------------->
+
+    # Toast
+      - ToastViewport.................................................: z-1000
+
+    # Dialog
+      - DialogOverlay.................................................: z-9000
+      - DialogContent.................................................: z-9100
+
  */
 
 /* -------------------------------------------------------------------------- */

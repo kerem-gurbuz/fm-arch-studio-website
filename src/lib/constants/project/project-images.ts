@@ -63,17 +63,17 @@ export const PROJECT_IMAGES: ProjectImageMap = {
     desktop: federalIITowerDesktop,
   },
   [ProjectId.PROJECT_DEL_SOL]: {
-    mobile: projectDelSolTablet, // ! Changed to tablet image source for higher resolution on mobile devices. (Featured Project)
+    mobile: projectDelSolTablet, // Changed for higher resolution (Featured P.)
     tablet: projectDelSolTablet,
     desktop: projectDelSolDesktop,
   },
   [ProjectId.LE_PROTOTYPE]: {
-    mobile: lePrototypeTablet, // ! Changed to tablet image source for higher resolution on mobile devices. (Featured Project)
+    mobile: lePrototypeTablet, // Changed for higher resolution (Featured P.)
     tablet: lePrototypeTablet,
     desktop: lePrototypeDesktop,
   },
   [ProjectId.TOWER_228B]: {
-    mobile: tower228bTablet, // ! Changed to tablet image source for higher resolution on mobile devices. (Featured Project)
+    mobile: tower228bTablet, // Changed for higher resolution (Featured P.)
     tablet: tower228bTablet,
     desktop: tower228bDesktop,
   },
