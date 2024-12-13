@@ -38,7 +38,7 @@ export const PROJECTS: ProjectMap = {
       alt: 'A futuristic-looking tunnel with white walls, a curved ceiling, and bright, linear lights illuminating the path.',
     }),
     gallery: [
-      '/assets/placeholder.svg',
+      '/assets/images/portfolio/desktop/image-seraph.jpg',
       '/assets/placeholder.svg',
       '/assets/placeholder.svg',
     ],
@@ -61,7 +61,7 @@ export const PROJECTS: ProjectMap = {
       alt: 'Eebox Building',
     }),
     gallery: [
-      '/assets/placeholder.svg',
+      '/assets/images/portfolio/desktop/image-eebox.jpg',
       '/assets/placeholder.svg',
       '/assets/placeholder.svg',
     ],
@@ -84,7 +84,7 @@ export const PROJECTS: ProjectMap = {
       alt: 'A low-angle view of a skyscraper with a repeating pattern of vertical lines, creating a sense of height and depth.',
     }),
     gallery: [
-      '/assets/placeholder.svg',
+      '/assets/images/portfolio/desktop/image-federal.jpg',
       '/assets/placeholder.svg',
       '/assets/placeholder.svg',
     ],
@@ -107,7 +107,7 @@ export const PROJECTS: ProjectMap = {
       alt: 'Project Del Sol',
     }),
     gallery: [
-      '/assets/placeholder.svg',
+      '/assets/images/portfolio/desktop/image-del-sol.jpg',
       '/assets/placeholder.svg',
       '/assets/placeholder.svg',
     ],
@@ -130,7 +130,7 @@ export const PROJECTS: ProjectMap = {
       alt: '228B Tower',
     }),
     gallery: [
-      '/assets/placeholder.svg',
+      '/assets/images/portfolio/desktop/image-228b.jpg',
       '/assets/placeholder.svg',
       '/assets/placeholder.svg',
     ],
@@ -153,7 +153,7 @@ export const PROJECTS: ProjectMap = {
       alt: 'Le Prototype',
     }),
     gallery: [
-      '/assets/placeholder.svg',
+      '/assets/images/portfolio/desktop/image-prototype.jpg',
       '/assets/placeholder.svg',
       '/assets/placeholder.svg',
     ],
@@ -176,7 +176,7 @@ export const PROJECTS: ProjectMap = {
       alt: 'Grand Edelweiss Hotel',
     }),
     gallery: [
-      '/assets/placeholder.svg',
+      '/assets/images/portfolio/desktop/image-edelweiss.jpg',
       '/assets/placeholder.svg',
       '/assets/placeholder.svg',
     ],
@@ -199,7 +199,7 @@ export const PROJECTS: ProjectMap = {
       alt: 'Netcry Tower',
     }),
     gallery: [
-      '/assets/placeholder.svg',
+      '/assets/images/portfolio/desktop/image-netcry.jpg',
       '/assets/placeholder.svg',
       '/assets/placeholder.svg',
     ],
@@ -222,7 +222,7 @@ export const PROJECTS: ProjectMap = {
       alt: 'Hypers',
     }),
     gallery: [
-      '/assets/placeholder.svg',
+      '/assets/images/portfolio/desktop/image-hypers.jpg',
       '/assets/placeholder.svg',
       '/assets/placeholder.svg',
     ],
@@ -245,7 +245,7 @@ export const PROJECTS: ProjectMap = {
       alt: 'SXIV Tower',
     }),
     gallery: [
-      '/assets/placeholder.svg',
+      '/assets/images/portfolio/desktop/image-sxiv.jpg',
       '/assets/placeholder.svg',
       '/assets/placeholder.svg',
     ],
@@ -268,7 +268,7 @@ export const PROJECTS: ProjectMap = {
       alt: 'A dramatic low-angle view of a skyscraper with a curved, grid-like facade, illuminated against a dark sky.',
     }),
     gallery: [
-      '/assets/placeholder.svg',
+      '/assets/images/portfolio/desktop/image-trinity.jpg',
       '/assets/placeholder.svg',
       '/assets/placeholder.svg',
     ],
@@ -291,7 +291,7 @@ export const PROJECTS: ProjectMap = {
       alt: 'A modern skyscraper with a blue and white geometric pattern on its exterior, creating a sense of depth and dimension.',
     }),
     gallery: [
-      '/assets/placeholder.svg',
+      '/assets/images/portfolio/desktop/image-paramour.jpg',
       '/assets/placeholder.svg',
       '/assets/placeholder.svg',
     ],
