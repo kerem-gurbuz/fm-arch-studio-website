@@ -1,7 +1,5 @@
 import { Metadata } from 'next';
 
-import { env } from '@/config/env';
-
 export const contactMetadata: Metadata = {
   title: 'Contact Us | Arch Studio',
   description:
@@ -10,7 +8,7 @@ export const contactMetadata: Metadata = {
     title: 'Contact Us | Arch Studio',
     description:
       "Get in touch with Arch Studio. We'd love to hear about your project. We have two offices, one in Texas and one in Tennessee.",
-    url: `${env.SITE_URL}/contact`,
+    url: '/contact',
     images: [
       {
         url: '/assets/seo/opengraph-image.png',

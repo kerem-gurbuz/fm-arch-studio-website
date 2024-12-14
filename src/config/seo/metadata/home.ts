@@ -10,7 +10,7 @@ export const homeMetadata: Metadata = {
     title: 'Arch Studio | Award-Winning Architecture Firm',
     description:
       'Arch Studio is a leading architecture firm specializing in modern, sustainable design. From stations to high-rise buildings, we create spaces that inspire and delight.',
-    url: env.SITE_URL,
+    url: '/',
     siteName: 'Arch Studio',
     images: [
       {
@@ -31,4 +31,25 @@ export const homeMetadata: Metadata = {
     images: ['/assets/seo/twitter-image.png'],
     creator: '@ArchStudio',
   },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  alternates: {
+    canonical: env.SITE_URL,
+  },
+  creator: 'Kerem GURBUZ',
+  authors: [
+    {
+      name: 'Kerem GURBUZ',
+      url: 'https://www.linkedin.com/in/gurbuz-kerem/',
+    },
+  ],
 };
