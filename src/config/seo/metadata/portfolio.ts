@@ -1,5 +1,7 @@
 import { Metadata } from 'next';
 
+import { env } from '@/config/env';
+
 export const portfolioMetadata: Metadata = {
   title: 'Our Portfolio | Arch Studio',
   description:
@@ -8,7 +10,7 @@ export const portfolioMetadata: Metadata = {
     title: 'Our Portfolio | Arch Studio',
     description:
       "Explore Arch Studio's diverse portfolio of architectural projects, from modern skyscrapers to innovative public spaces.",
-    url: '/portfolio',
+    url: `${env.SITE_URL}/portfolio`,
     images: [
       {
         url: '/assets/seo/opengraph-image.png',

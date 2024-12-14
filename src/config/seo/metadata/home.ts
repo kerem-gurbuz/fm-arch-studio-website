@@ -10,7 +10,7 @@ export const homeMetadata: Metadata = {
     title: 'Arch Studio | Award-Winning Architecture Firm',
     description:
       'Arch Studio is a leading architecture firm specializing in modern, sustainable design. From stations to high-rise buildings, we create spaces that inspire and delight.',
-    url: '/',
+    url: env.SITE_URL,
     siteName: 'Arch Studio',
     images: [
       {
