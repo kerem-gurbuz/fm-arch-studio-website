@@ -20,7 +20,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html
+      lang="en"
+      className="scrollbar-thin sm:scrollbar scrollbar-track-white scrollbar-thumb-very-dark-blue hover:scrollbar-thumb-dark-grey"
+    >
       <body className={`${spartan.variable} ${league_spartan.variable}`}>
         <Header />
         {children}
