@@ -36,10 +36,10 @@ const STATIC_ROUTES = {
  * Dynamic routes that require parameters
  */
 const DYNAMIC_ROUTES = {
-  PROJECT_DETAIL: (id: string): Route => ({
-    label: `Project ${id}`,
-    href: `${STATIC_ROUTES.PORTFOLIO.href}/${id}`,
-  }),
+  // PROJECT_DETAIL: (id: string): Route => ({
+  //   label: `Project ${id}`,
+  //   href: `${STATIC_ROUTES.PORTFOLIO.href}/${id}`,
+  // }),
 } as const;
 
 /**
