@@ -1,0 +1,249 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* -------------------------------------------------------------------------- */
+/*                                   z-index                                  */
+/* -------------------------------------------------------------------------- */
+
+/* 
+  <--------------------------------- Header --------------------------------->
+  
+    # Header................................................[relative]: z-100
+      - PageLabel component (relative to Header)............[absolute]: null
+      - ArchStudioLogo component......................................: null
+      - NavLinks component............................................: null
+      - MobileMenu component...................................[fixed]: z-50
+
+  <--------------------------------- Footer --------------------------------->
+
+    # Footer
+      - Decorative background elements (relative to Footer) [absolute]: -z-10
+      - ArchStudioLogo component......................................: null
+      - NavLinks component............................................: null
+      - Portfolio button..............................................: null
+
+  <-------------------------------- Homepage -------------------------------->
+
+    # Hero Section
+      - Carousel (as HeroSlider) component............................: null
+        > Slide image.................................................: null
+        > Image overlay (relative to CarouselItem)..........[absolute]: z-10
+        > Slide content (relative to CarouselItem)..........[absolute]: z-20
+        > Thumbnails (relative to Carousel).................[absolute]: z-30
+
+    # Welcome Section
+      - Welcome component.............................................: null
+        > Decorative "Welcome" text (relative to Welcome)...[absolute]: z-10
+        > Content...........................................[relative]: z-20
+        > Image.......................................................: null
+      - SmallTeam component...........................................: null
+        > Background image............................................: null
+        > Image overlay (relative to SmallTeam).............[absolute]: z-10
+        > Content (relative to SmallTeam)...................[absolute]: z-20
+        
+    # Featured Projects
+      - FeaturedProjectsGrid component................................: null
+      - ProjectCard component.........................................: null
+        > Card image..................................................: null
+        > Image overlay (relative to ProjectCard)...........[absolute]: z-10
+        > Project number (relative to ProjectCard)..........[absolute]: z-20
+        > Content (relative to ProjectCard).................[absolute]: z-20
+
+  <----------------------------- Portfolio Page ----------------------------->
+
+    # Portfolio Section
+      - PortfolioGrid component.......................................: null
+      - ProjectCard component.........................................: null
+        > Card image..................................................: null
+        > Image overlay (relative to ProjectCard)...........[absolute]: z-10
+        > Content (relative to ProjectCard).................[absolute]: z-20
+    
+  <------------------------------- About Page ------------------------------->
+
+    # Hero Section
+      - Image.........................................................: null
+      - Image overlay (relative to HeroSection).............[absolute]: z-10
+      - Decorative element (relative to HeroSection)........[absolute]: z-20
+      - Decorative "About" text (relative to HeroSection)...[absolute]: z-30
+      - TeamIntro component (relative to HeroSection).......[absolute]: z-20
+        > Decorative divider line (relative to TeamIntro)...[absolute]: null 
+        > Content.....................................................: null
+    
+    # Heritage Section
+      - Heritage component............................................: null
+        > Decorative divider line.....................................: null
+        > Content.....................................................: null
+        > Image.......................................................: null
+
+    # Leaders Section
+      - LeadersGrid component.........................................: null
+      - LeaderCard component..........................................: null
+        > Card image..................................................: null
+        > Image overlay (relative to LeaderCard)............[absolute]: z-10
+        > Social links (relative to LeaderCard).............[absolute]: z-20
+        > Content.....................................................: null
+
+  <------------------------------ Contact Page ------------------------------>
+
+    # Hero Section
+      - Image.........................................................: null
+      - Image overlay (relative to HeroSection).............[absolute]: z-10
+      - Decorative element (relative to HeroSection)........[absolute]: z-20
+      - Decorative "Contact" text (relative to HeroSection).[absolute]: z-30
+      - ContactUs component (relative to HeroSection).......[absolute]: z-20
+        > Decorative divider line (relative to ContactUs)...[absolute]: null 
+        > Content.....................................................: null
+
+    # Contact Details Section
+      - Content.......................................................: null
+        > Decorative divider line.....................................: null
+        > Title & OfficeCards.........................................: null
+      - GoogleMap component...........................................: null
+        > MapControl (relative to GoogleMap)................[absolute]: default
+        > MarkerWithInfoWindow (relative to GoogleMap)......[absolute]: default
+
+    # Contact Form Section
+      - Title.........................................................: null
+      - FormItem component............................................: null
+        > Input & Textarea............................................: null
+        > Bottom-border (relative to FormItem)..............[absolute]: null
+        > FormMessage (relative to FormItem)................[absolute]: null
+      - SubmitButton component........................................: null
+
+  <-------------------------- Special UI Components ------------------------->
+
+    # Toast
+      - ToastViewport.................................................: z-1000
+
+    # Dialog
+      - DialogOverlay.................................................: z-9000
+      - DialogContent.................................................: z-9100
+
+ */
+
+/* -------------------------------------------------------------------------- */
+/*                                   Colors                                   */
+/* -------------------------------------------------------------------------- */
+
+/* Design System Colors */
+@layer base {
+  :root {
+    --color-very-dark-blue: 225 13% 12%;
+    --color-dark-grey: 226 6% 40%;
+    --color-medium-grey: 223 7% 53%;
+    --color-light-grey: 225 17% 82%;
+    --color-very-light-grey: 230 21% 95%;
+    --color-red-error: 0 68% 61%;
+    /* additional colors */
+    --color-pale-sky: 224 23% 94%;
+  }
+}
+
+/* Shadcn-UI Colors */
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 3.9%;
+    --primary: 0 0% 9%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 0 0% 96.1%;
+    --secondary-foreground: 0 0% 9%;
+    --muted: 0 0% 96.1%;
+    --muted-foreground: 0 0% 45.1%;
+    --accent: 0 0% 96.1%;
+    --accent-foreground: 0 0% 9%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 89.8%;
+    --input: 0 0% 89.8%;
+    --ring: 0 0% 3.9%;
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+    --radius: 0.5rem;
+  }
+  .dark {
+    --background: 0 0% 3.9%;
+    --foreground: 0 0% 98%;
+    --card: 0 0% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 0 0% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 0 0% 98%;
+    --primary-foreground: 0 0% 9%;
+    --secondary: 0 0% 14.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 0 0% 14.9%;
+    --muted-foreground: 0 0% 63.9%;
+    --accent: 0 0% 14.9%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 14.9%;
+    --input: 0 0% 14.9%;
+    --ring: 0 0% 83.1%;
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-white font-league-spartan text-very-dark-blue antialiased;
+  }
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                 Typography                                 */
+/* -------------------------------------------------------------------------- */
+
+/* Headings */
+@layer components {
+  .heading-lg {
+    @apply font-league-spartan text-[48px] font-bold leading-[48px] tracking-[-1.2px];
+  }
+  .heading-md {
+    @apply font-league-spartan text-[48px] font-bold leading-[52px] tracking-[-1.71px];
+  }
+  .heading-sm {
+    @apply font-league-spartan text-[32px] font-bold leading-[40px];
+  }
+
+  @screen md {
+    .heading-xl {
+      @apply font-league-spartan text-[120px] font-bold leading-[200px] tracking-[-3px];
+    }
+    .heading-lg {
+      @apply text-[96px] leading-[80px] tracking-[-2px];
+    }
+    .heading-md {
+      @apply text-[72px] leading-[64px] tracking-[-2px];
+    }
+  }
+
+  @screen lg {
+    .heading-xl {
+      @apply text-[250px] leading-[200px] tracking-[-5px];
+    }
+  }
+}
+
+/* Body */
+@layer components {
+  .body-text {
+    @apply font-league-spartan text-[18px] font-medium leading-[24px];
+  }
+}
